@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://uih206g58jsp"]
+
+[ext_resource type="Script" uid="uid://dodg7a53yy5i" path="res://scripts/slime.gd" id="1_3fw4b"]
+[ext_resource type="Texture2D" uid="uid://diww5kmbscvdv" path="res://assets/brackeys_platformer_assets/sprites/slime_green.png" id="2_8ky11"]
+[ext_resource type="PackedScene" uid="uid://belw5hr53hcgr" path="res://scenes/killzone.tscn" id="3_p66sp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hgwv"]
+atlas = ExtResource("2_8ky11")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05s1x"]
+atlas = ExtResource("2_8ky11")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5neg"]
+atlas = ExtResource("2_8ky11")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ypo5"]
+atlas = ExtResource("2_8ky11")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tapdk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1hgwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05s1x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5neg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ypo5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xvlof"]
+size = Vector2(14, 12.5)
+
+[node name="slime" type="Node2D"]
+script = ExtResource("1_3fw4b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_tapdk")
+autoplay = "default"
+frame_progress = 0.0961896
+
+[node name="killzone" parent="." instance=ExtResource("3_p66sp")]
+position = Vector2(-2, -12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
+position = Vector2(2, 5.75)
+shape = SubResource("RectangleShape2D_xvlof")
+
+[node name="RayCast right" type="RayCast2D" parent="."]
+position = Vector2(0, -3)
+target_position = Vector2(7, 0)
+
+[node name="RayCast left" type="RayCast2D" parent="."]
+position = Vector2(0, -3)
+target_position = Vector2(-7, 0)
+
+[node name="attack_cooldown" type="Timer" parent="."]
+wait_time = 0.5

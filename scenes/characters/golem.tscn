@@ -1,0 +1,287 @@
+[gd_scene load_steps=46 format=3 uid="uid://b726357aftqu6"]
+
+[ext_resource type="Script" uid="uid://b06tkncjlrfrw" path="res://scripts/character_scripts/golem.gd" id="1_ecptb"]
+[ext_resource type="Texture2D" uid="uid://bluv2alvijy3j" path="res://assets/characters/GameJam Golem Animation/Golem ATTACK/attack1.png" id="2_0elug"]
+[ext_resource type="Texture2D" uid="uid://cotjcvtw50hqy" path="res://assets/characters/GameJam Golem Animation/Golem ATTACK/attack2.png" id="3_qu0d1"]
+[ext_resource type="Texture2D" uid="uid://yqf2sxet7qgl" path="res://assets/characters/GameJam Golem Animation/Golem ATTACK/attack3.png" id="4_15x5q"]
+[ext_resource type="Texture2D" uid="uid://4pxo33b1jper" path="res://assets/characters/GameJam Golem Animation/Golem ATTACK/attack4.png" id="5_0f4bk"]
+[ext_resource type="Texture2D" uid="uid://cqic848xcmxrw" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death1.png" id="6_2xv12"]
+[ext_resource type="Texture2D" uid="uid://dc0fls4sqbf1w" path="res://assets/characters/GameJam Golem Animation/Golem WALKRUN/walk2.png" id="6_5lrdn"]
+[ext_resource type="Texture2D" uid="uid://pcbwg2qbegix" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death2.png" id="7_uilfx"]
+[ext_resource type="Texture2D" uid="uid://d2pwr17dh3d8h" path="res://assets/characters/GameJam Golem Animation/Golem WALKRUN/walk3.png" id="7_xho7s"]
+[ext_resource type="Texture2D" uid="uid://6c7hdxuclino" path="res://assets/characters/GameJam Golem Animation/Golem WALKRUN/walk4.png" id="8_2bw08"]
+[ext_resource type="Texture2D" uid="uid://cjgeg7lon1tj8" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death3.png" id="8_pmpxl"]
+[ext_resource type="Texture2D" uid="uid://11wfajxq32qy" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death4.png" id="9_080x1"]
+[ext_resource type="Texture2D" uid="uid://b3ncl1m7h636x" path="res://assets/characters/GameJam Golem Animation/Golem IDLE/idle1.png" id="9_sg0sd"]
+[ext_resource type="Texture2D" uid="uid://ccgxt8y7m8q7b" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death5.png" id="10_h4lq5"]
+[ext_resource type="Texture2D" uid="uid://rilng8g7gx6e" path="res://assets/characters/GameJam Golem Animation/Golem IDLE/idle2.png" id="10_u6v8k"]
+[ext_resource type="Texture2D" uid="uid://c155gmh26l3sw" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death6.png" id="11_1j1nh"]
+[ext_resource type="Texture2D" uid="uid://dm6gse2hb3dwk" path="res://assets/characters/GameJam Golem Animation/Golem IDLE/idle3.png" id="11_s6gu0"]
+[ext_resource type="Texture2D" uid="uid://dw3hs1he4ma1v" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death7.png" id="12_0vvae"]
+[ext_resource type="Texture2D" uid="uid://c02a8fsx4kjsg" path="res://assets/characters/GameJam Golem Animation/Golem IDLE/idle4.png" id="12_sr4wm"]
+[ext_resource type="Texture2D" uid="uid://df2sg30pirrfh" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death8.png" id="13_2e1yn"]
+[ext_resource type="Texture2D" uid="uid://borblo4620ail" path="res://assets/characters/GameJam Golem Animation/Golem IDLE/idle5.png" id="13_ks78l"]
+[ext_resource type="Texture2D" uid="uid://bpd246oo7t6vy" path="res://assets/characters/GameJam Golem Animation/Golem IDLE/idle6.png" id="14_1vj27"]
+[ext_resource type="Texture2D" uid="uid://b5karqyv03chi" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death9.png" id="14_tldu3"]
+[ext_resource type="Texture2D" uid="uid://brr4cja34b7tc" path="res://assets/characters/GameJam Golem Animation/Golem DEATH ANIMATION/death10.png" id="15_aif77"]
+[ext_resource type="Texture2D" uid="uid://qdfjachyp1yh" path="res://assets/characters/GameJam Golem Animation/Golem WALKRUN/walk1.png" id="15_leecd"]
+[ext_resource type="Texture2D" uid="uid://4nwh0d71v8uw" path="res://assets/characters/GameJam Golem Animation/Golem JUMP/jump1.png" id="15_xho7s"]
+[ext_resource type="Texture2D" uid="uid://bpkic5j3g18vf" path="res://assets/characters/GameJam Golem Animation/Golem JUMP/jump2.png" id="16_2bw08"]
+[ext_resource type="Texture2D" uid="uid://dua560jx1kdtj" path="res://assets/characters/GameJam Golem Animation/Golem FALL/fall1.png" id="16_uilfx"]
+[ext_resource type="Texture2D" uid="uid://wd5q2j3mi3s" path="res://assets/characters/GameJam Golem Animation/Golem HIT/hit1.png" id="17_hc25l"]
+[ext_resource type="Texture2D" uid="uid://cigty17bt6xcl" path="res://assets/characters/GameJam Golem Animation/Golem JUMP/jump3.png" id="17_sg0sd"]
+[ext_resource type="Texture2D" uid="uid://disr4vjc82qej" path="res://assets/characters/GameJam Golem Animation/Golem HIT/hit2.png" id="18_n7c2p"]
+[ext_resource type="Texture2D" uid="uid://b4nytvckx3c7o" path="res://assets/characters/GameJam Golem Animation/Golem JUMP/jump4.png" id="18_u6v8k"]
+[ext_resource type="Texture2D" uid="uid://bk3c15voddl48" path="res://assets/characters/GameJam Golem Animation/Golem HIT/hit3.png" id="19_qbp5b"]
+[ext_resource type="Texture2D" uid="uid://cmoe0wrhgrnju" path="res://assets/characters/GameJam Golem Animation/Golem JUMP/jump5.png" id="19_s6gu0"]
+[ext_resource type="AudioStream" uid="uid://bq6o0va604u18" path="res://sfx/Golem/golem_punch_connect.wav" id="32_pmpxl"]
+[ext_resource type="AudioStream" uid="uid://cjqbvdoxjxf63" path="res://sfx/Golem/golem_damage.wav" id="33_080x1"]
+[ext_resource type="AudioStream" uid="uid://dlifxxtac1g2i" path="res://sfx/Golem/golem_death.wav" id="34_0vvae"]
+[ext_resource type="AudioStream" uid="uid://c3npug4lhef1c" path="res://sfx/Golem/golem_jump.wav" id="35_2e1yn"]
+[ext_resource type="AudioStream" uid="uid://e662k0hqsyhj" path="res://sfx/Golem/golem_walk.mp3" id="36_tldu3"]
+[ext_resource type="AudioStream" uid="uid://cihmdcukeo21a" path="res://sfx/Golem/golem_landing.mp3" id="37_2e1yn"]
+[ext_resource type="Script" uid="uid://ce76i65l8cer4" path="res://scripts/character_scripts/health_bar.gd" id="38_2unku"]
+[ext_resource type="PackedScene" uid="uid://b0811qxjx7yii" path="res://scenes/characters/lebron.tscn" id="42_n7c2p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_prngn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0elug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qu0d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_15x5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0f4bk")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_2xv12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_uilfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pmpxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_080x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_h4lq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1j1nh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0vvae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2e1yn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_tldu3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aif77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aif77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aif77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aif77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aif77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aif77")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_uilfx")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_hc25l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_n7c2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qbp5b")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_sg0sd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_u6v8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_s6gu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_sr4wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ks78l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1vj27")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_xho7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_2bw08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_sg0sd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_u6v8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_s6gu0")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_leecd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5lrdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xho7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2bw08")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uilfx"]
+radius = 30.0
+height = 94.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqe5q"]
+size = Vector2(106.667, 116.667)
+
+[node name="Golem" type="CharacterBody2D" groups=["player"]]
+position = Vector2(-3, -51)
+scale = Vector2(0.3, 0.3)
+collision_layer = 7
+collision_mask = 5
+script = ExtResource("1_ecptb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.513672, 0.529559)
+sprite_frames = SubResource("SpriteFrames_prngn")
+animation = &"hit"
+frame_progress = 0.801046
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_uilfx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.4, 1.4)
+position_smoothing_speed = 3.0
+
+[node name="players_hitbox" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="players_hitbox"]
+position = Vector2(3.33333, -1.66664)
+shape = SubResource("RectangleShape2D_lqe5q")
+
+[node name="attack_cooldown" type="Timer" parent="."]
+
+[node name="golem_punch" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("32_pmpxl")
+
+[node name="golem_damage" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("33_080x1")
+
+[node name="golem_death" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("34_0vvae")
+
+[node name="golem_jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("35_2e1yn")
+
+[node name="golem_walk" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("36_tldu3")
+volume_db = -20.0
+
+[node name="golem_landing" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("37_2e1yn")
+volume_db = -10.0
+
+[node name="debug" type="Label" parent="."]
+offset_left = -24.0
+offset_top = -123.0
+offset_right = 25.0
+offset_bottom = -100.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = -83.0
+offset_right = 366.0
+offset_bottom = -30.0
+grow_vertical = 0
+value = 100.0
+script = ExtResource("38_2unku")
+
+[node name="death_timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="LEBRON" parent="." instance=ExtResource("42_n7c2p")]
+position = Vector2(-83.3333, -103.333)
+rotation = 0.296706
+scale = Vector2(0.3, 0.3)
+
+[connection signal="body_entered" from="players_hitbox" to="." method="_on_players_hitbox_body_entered"]
+[connection signal="body_exited" from="players_hitbox" to="." method="_on_players_hitbox_body_exited"]
+[connection signal="timeout" from="attack_cooldown" to="." method="_on_attack_cooldown_timeout"]
+[connection signal="timeout" from="death_timer" to="." method="_on_death_timer_timeout"]

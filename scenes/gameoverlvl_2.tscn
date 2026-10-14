@@ -1,0 +1,196 @@
+[gd_scene load_steps=13 format=3 uid="uid://3xrpgev1kqxd"]
+
+[ext_resource type="Script" uid="uid://xcpx60vwxfau" path="res://scripts/gameover/gameoverlvl_2.gd" id="1_lpvad"]
+[ext_resource type="FontFile" uid="uid://dpyjjiimvcpq0" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_324mj"]
+[ext_resource type="PackedScene" uid="uid://ffx6tat5hnny" path="res://assets/characters/LEBRONNN/Lebronflying.tscn" id="3_324mj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tn7eb"]
+bg_color = Color(0.321347, 0, 0.0417186, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_03876"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ornaf"]
+bg_color = Color(0.425927, 0.173715, 0, 0.756863)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ghkwi"]
+bg_color = Color(0.425927, 0.173715, 0, 0.756863)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qdus6"]
+bg_color = Color(0.67052, 1.11182e-05, 0.0712352, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_csxbv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r26qv"]
+bg_color = Color(0.425927, 0.173715, 0, 0.756863)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ll1vf"]
+bg_color = Color(0.425927, 0.173715, 0, 0.756863)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wecv6"]
+bg_color = Color(0.494174, 0, 0.00574017, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[node name="gameoverlvl2" type="CanvasLayer"]
+script = ExtResource("1_lpvad")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1881.0
+offset_top = -1209.0
+offset_right = 1982.0
+offset_bottom = 1203.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_tn7eb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -34.0
+offset_right = 198.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("2_324mj")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/focus = SubResource("StyleBoxEmpty_03876")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ornaf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ghkwi")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qdus6")
+text = "Try Level Again"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("2_324mj")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/focus = SubResource("StyleBoxEmpty_03876")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ornaf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ghkwi")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qdus6")
+text = "Return To Start"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("2_324mj")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_csxbv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_r26qv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ll1vf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wecv6")
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -399.5
+offset_top = -221.0
+offset_right = 399.5
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = -14
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_outline_size = -17
+theme_override_fonts/font = ExtResource("2_324mj")
+theme_override_font_sizes/font_size = 76
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("3_324mj")]
+position = Vector2(179, 198)
+rotation = 0.351176
+scale = Vector2(0.662949, 0.662951)
+frame_progress = 0.796835
+
+[node name="AnimatedSprite2D2" parent="." instance=ExtResource("3_324mj")]
+position = Vector2(996, 179)
+rotation = -0.195847
+scale = Vector2(0.662949, 0.662951)
+frame_progress = 0.796835
+flip_h = true
+
+[node name="AnimatedSprite2D3" parent="." instance=ExtResource("3_324mj")]
+position = Vector2(1029, 375)
+rotation = 0.260073
+scale = Vector2(0.662949, 0.662951)
+frame_progress = 0.796835
+flip_h = true
+
+[node name="AnimatedSprite2D4" parent="." instance=ExtResource("3_324mj")]
+position = Vector2(150, 386)
+rotation = -0.255997
+scale = Vector2(0.662949, 0.662951)
+frame_progress = 0.796835
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_try_again_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_try_again_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_level1_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_returntolvl1_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_quit_utton_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_quit_button_3_pressed"]

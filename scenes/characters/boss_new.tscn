@@ -1,0 +1,332 @@
+[gd_scene load_steps=42 format=3 uid="uid://d2lr1jbxsh1kc"]
+
+[ext_resource type="Script" uid="uid://bkjvud5mbou4l" path="res://scripts/character_scripts/boss_new.gd" id="1_oo3ec"]
+[ext_resource type="Texture2D" uid="uid://crfrc86mb44w7" path="res://assets/characters/GameJam Witch Animation/Witch MELEE/melee1.png" id="2_jote4"]
+[ext_resource type="Texture2D" uid="uid://ddno3fm3tbsfy" path="res://assets/characters/GameJam Witch Animation/Witch MELEE/melee2.png" id="3_hwpxu"]
+[ext_resource type="Texture2D" uid="uid://cg0cu6fhqlqk7" path="res://assets/characters/GameJam Witch Animation/Witch MELEE/melee3.png" id="4_2ybcb"]
+[ext_resource type="Texture2D" uid="uid://cnmk55m0kb6yi" path="res://assets/characters/GameJam Witch Animation/Witch MELEE/melee4.png" id="5_pippj"]
+[ext_resource type="Script" uid="uid://yvvcdtf1f1s3" path="res://scripts/character_scripts/boss_bar.gd" id="6_2og0v"]
+[ext_resource type="Texture2D" uid="uid://b5rexy8qh5j3s" path="res://assets/characters/GameJam Witch Animation/Witch MELEE/melee5.png" id="6_qpqw3"]
+[ext_resource type="Texture2D" uid="uid://ea72wwt2twhw" path="res://assets/characters/GameJam Witch Animation/Witch MELEE/melee6.png" id="7_0mx8s"]
+[ext_resource type="AudioStream" uid="uid://clauqrin0x5b6" path="res://sfx/Witch/witch_damage.wav" id="7_kw877"]
+[ext_resource type="Texture2D" uid="uid://clpsjbqch8p81" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death1.png" id="8_6wcco"]
+[ext_resource type="AudioStream" uid="uid://ciocepajb8rd5" path="res://sfx/Witch/witch_death.mp3" id="8_shsxc"]
+[ext_resource type="Texture2D" uid="uid://7a6p0by5k7ju" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death2.png" id="9_2262u"]
+[ext_resource type="Texture2D" uid="uid://chpr4d5xf0rc" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death3.png" id="10_cst0t"]
+[ext_resource type="Texture2D" uid="uid://c4npnx4dt7ptx" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death4.png" id="11_60u3j"]
+[ext_resource type="Texture2D" uid="uid://yeh45y53qerj" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death5.png" id="12_ugx8x"]
+[ext_resource type="Texture2D" uid="uid://xhmi6yuoks1m" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death6.png" id="13_1vpuv"]
+[ext_resource type="Texture2D" uid="uid://75msjvffsj51" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death7.png" id="14_nf772"]
+[ext_resource type="Texture2D" uid="uid://ct6gmo6pq2g7a" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death8.png" id="15_d7fwo"]
+[ext_resource type="Texture2D" uid="uid://cd7i1hsvwmku3" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death9.png" id="16_svbj0"]
+[ext_resource type="Texture2D" uid="uid://cfabsv8iipvxm" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death10.png" id="17_mhfuo"]
+[ext_resource type="Texture2D" uid="uid://ioqhy7b7jsjn" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death11.png" id="18_b5lhs"]
+[ext_resource type="Texture2D" uid="uid://dc602u1uhdpc7" path="res://assets/characters/GameJam Witch Animation/Witch DEATH/death12.png" id="19_2mpv8"]
+[ext_resource type="Texture2D" uid="uid://cch5r20tnpdqw" path="res://assets/characters/GameJam Witch Animation/Witch HIT/hit1.png" id="20_5h80s"]
+[ext_resource type="Texture2D" uid="uid://bpu8a0mpbni75" path="res://assets/characters/GameJam Witch Animation/Witch HIT/hit2.png" id="21_t7cpi"]
+[ext_resource type="Texture2D" uid="uid://bcghhta8l5325" path="res://assets/characters/GameJam Witch Animation/Witch HIT/hit3.png" id="22_o6xx7"]
+[ext_resource type="Texture2D" uid="uid://b2qnd2isq3415" path="res://assets/characters/GameJam Witch Animation/Witch IDLE/idle1.png" id="23_ihfn7"]
+[ext_resource type="Texture2D" uid="uid://dqhtet7cnu78" path="res://assets/characters/GameJam Witch Animation/Witch IDLE/idle2.png" id="24_0pepe"]
+[ext_resource type="Texture2D" uid="uid://updu7md00dkr" path="res://assets/characters/GameJam Witch Animation/Witch IDLE/idle3.png" id="25_1egt7"]
+[ext_resource type="Texture2D" uid="uid://bpv7xjupiovsr" path="res://assets/characters/GameJam Witch Animation/Witch IDLE/idle4.png" id="26_2du3n"]
+[ext_resource type="Texture2D" uid="uid://bgkhj01mvxsqd" path="res://assets/characters/GameJam Witch Animation/Witch FLYING/fly1.png" id="27_xjtqo"]
+[ext_resource type="Texture2D" uid="uid://bghsopuk5ug16" path="res://assets/characters/GameJam Witch Animation/Witch FLYING/fly2.png" id="28_v180d"]
+[ext_resource type="Texture2D" uid="uid://dx5aiu2tcih7c" path="res://assets/characters/GameJam Witch Animation/Witch FLYING/fly3.png" id="29_xd6qh"]
+[ext_resource type="Texture2D" uid="uid://l5igi15d26ir" path="res://assets/characters/GameJam Witch Animation/Witch FLYING/fly4.png" id="30_d7mlo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6e2d7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jote4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hwpxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2ybcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pippj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qpqw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0mx8s")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_6wcco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2262u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_cst0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_60u3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ugx8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1vpuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nf772")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d7fwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_svbj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mhfuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_b5lhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2mpv8")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_5h80s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_t7cpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_o6xx7")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_ihfn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_0pepe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_1egt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_2du3n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_xjtqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_v180d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xd6qh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_d7mlo")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="FontFile" id="FontFile_kw877"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="Animation" id="Animation_wbqnn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/Label:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_73776"]
+resource_name = "boss_killed"
+length = 4.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("UI/Label:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.03333, 3.26667, 4.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0.796078, 0.698039, 0, 0), Color(0.988235, 0.784314, 0, 1), Color(0.988235, 0.784314, 0, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mi7op"]
+_data = {
+&"RESET": SubResource("Animation_wbqnn"),
+&"boss_killed": SubResource("Animation_73776")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rpwfr"]
+radius = 41.0
+height = 227.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6yekp"]
+radius = 1428.95
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6yekp"]
+radius = 118.5
+height = 266.0
+
+[node name="Boss_New" type="CharacterBody2D" groups=["boss"]]
+scale = Vector2(2, 2)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_oo3ec")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6e2d7")
+animation = &"hit"
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Boss_Health" type="ProgressBar" parent="UI"]
+visible = false
+modulate = Color(1, 0, 0, 1)
+self_modulate = Color(0.971053, 0.166689, 1.92523e-07, 1)
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -299.0
+offset_top = 29.0
+offset_right = 300.0
+offset_bottom = 87.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+value = 100.0
+script = ExtResource("6_2og0v")
+
+[node name="Label" type="Label" parent="UI/Boss_Health"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -92.5
+offset_top = 1.0
+offset_right = 93.5
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 40
+text = "Evil Witch"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="UI"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -63.0
+offset_right = -149.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+theme_type_variation = &"GraphFrameTitleLabel"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_kw877")
+text = "Witch Slain"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_mi7op")
+}
+
+[node name="debug" type="Label" parent="."]
+offset_left = -24.0
+offset_top = -41.0
+offset_right = 25.0
+offset_bottom = -18.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_rpwfr")
+
+[node name="player_detection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_detection"]
+position = Vector2(1.5, -17)
+shape = SubResource("CircleShape2D_6yekp")
+
+[node name="enemy_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
+shape = SubResource("CapsuleShape2D_6yekp")
+
+[node name="melee_cooldown" type="Timer" parent="."]
+wait_time = 4.0
+
+[node name="range_one_cooldown" type="Timer" parent="."]
+
+[node name="range_two_cooldown" type="Timer" parent="."]
+
+[node name="dash_cooldown" type="Timer" parent="."]
+
+[node name="witch_hurt" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_kw877")
+
+[node name="witch_death" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_shsxc")
+
+[node name="death_timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="player_detection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="player_detection" to="." method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_entered"]
+[connection signal="body_exited" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_exited"]
+[connection signal="timeout" from="death_timer" to="." method="_on_death_timer_timeout"]

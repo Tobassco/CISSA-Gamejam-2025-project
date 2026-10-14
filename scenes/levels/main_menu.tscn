@@ -1,0 +1,181 @@
+[gd_scene load_steps=11 format=3 uid="uid://dnd8iheuaa52m"]
+
+[ext_resource type="Script" uid="uid://cewb6xe74ldu2" path="res://scripts/main_menu.gd" id="1_721jg"]
+[ext_resource type="Texture2D" uid="uid://bk46x3ne4wafj" path="res://assets/brackeys_platformer_assets/sprites/background.jpeg" id="2_geflf"]
+[ext_resource type="FontFile" uid="uid://dpyjjiimvcpq0" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="3_fkd6t"]
+[ext_resource type="Texture2D" uid="uid://buq3wsgj0hqn2" path="res://assets/backgrounds/green_back.jpg" id="3_keln3"]
+[ext_resource type="FontFile" uid="uid://o10k5u23elu6" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="4_geflf"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gb11s"]
+texture = ExtResource("2_geflf")
+modulate_color = Color(0.331019, 0.331019, 0.331019, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ib6l7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_no6pe"]
+bg_color = Color(0.425927, 0.173715, 0, 0.756863)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cmsr5"]
+bg_color = Color(0.425927, 0.173715, 0, 0.756863)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hp8um"]
+bg_color = Color(0.290522, 0.194095, 0.144475, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_721jg")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -574.0
+offset_top = -320.0
+offset_right = 577.0
+offset_bottom = 337.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_gb11s")
+
+[node name="GreenBack" type="Sprite2D" parent="Panel"]
+modulate = Color(0.556953, 0.556953, 0.556953, 1)
+position = Vector2(571, 326)
+scale = Vector2(0.611079, 0.611079)
+texture = ExtResource("3_keln3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -34.0
+offset_right = 198.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("3_fkd6t")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ib6l7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_no6pe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cmsr5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hp8um")
+text = "Start Game"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("3_fkd6t")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ib6l7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_no6pe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cmsr5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hp8um")
+text = "Options"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_constants/h_separation = 4
+theme_override_fonts/font = ExtResource("3_fkd6t")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ib6l7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_no6pe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cmsr5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hp8um")
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0.945011, 0.945011, 0.945011, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -399.5
+offset_top = -221.0
+offset_right = 399.5
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_x = -14
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/shadow_outline_size = -17
+theme_override_fonts/font = ExtResource("3_fkd6t")
+theme_override_font_sizes/font_size = 76
+text = "LebronLess"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -226.0
+offset_top = -103.0
+offset_right = 263.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/shadow_offset_x = 40
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 33
+theme_override_fonts/font = ExtResource("4_geflf")
+theme_override_font_sizes/font_size = 24
+text = "A World Without Lebron...."
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_quit_button_pressed"]

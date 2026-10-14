@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8vqcuugcainx"]
+
+[ext_resource type="PackedScene" uid="uid://cq0phhrabi6wr" path="res://scenes/platforms/moving_platform_orange.tscn" id="1_uptkh"]
+
+[node name="vertical_platform" instance=ExtResource("1_uptkh")]
+
+[node name="Platforms2" parent="." index="0"]
+region_rect = Rect2(0.13826, 15.7831, 15.7133, 9.28829)
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2(1.5, 0.5)
