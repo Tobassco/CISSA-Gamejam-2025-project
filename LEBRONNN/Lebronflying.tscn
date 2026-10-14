@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://ffx6tat5hnny"]
+
+[ext_resource type="Texture2D" uid="uid://bpvk73wbb3qco" path="res://assets/characters/LEBRONNN/lebron_2.png" id="1_oo15o"]
+[ext_resource type="Texture2D" uid="uid://dcjx2gdv2p8y3" path="res://assets/characters/LEBRONNN/lebron_3.png" id="2_tgabq"]
+[ext_resource type="Texture2D" uid="uid://bq8wr6qu4ayid" path="res://assets/characters/LEBRONNN/lebron_idle.png" id="3_cm48a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4eh1"]
+atlas = ExtResource("1_oo15o")
+region = Rect2(0, 0, 500, 499)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8m8q"]
+atlas = ExtResource("2_tgabq")
+region = Rect2(0, 0, 499, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21fpe"]
+atlas = ExtResource("3_cm48a")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x7ydp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4eh1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8m8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21fpe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(-3, -18)
+scale = Vector2(0.247745, 0.247746)
+sprite_frames = SubResource("SpriteFrames_x7ydp")
+autoplay = "default"
+frame_progress = 0.258986
