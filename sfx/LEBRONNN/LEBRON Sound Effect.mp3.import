@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://u4ne5vxqqghf"
+path="res://.godot/imported/LEBRON Sound Effect.mp3-43a14ca3517c5a3a8767982aa22f5c6e.mp3str"
+
+[deps]
+
+source_file="res://sfx/LEBRONNN/LEBRON Sound Effect.mp3"
+dest_files=["res://.godot/imported/LEBRON Sound Effect.mp3-43a14ca3517c5a3a8767982aa22f5c6e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

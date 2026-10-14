@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cf060kmo4l6x0"
+path="res://.godot/imported/[Edit] BO BO BO BOOM #lebron #lebronjames #edit #nba.mp3-a7adc036d88497e60e242e28018c49de.mp3str"
+
+[deps]
+
+source_file="res://sfx/LEBRONNN/[Edit] BO BO BO BOOM #lebron #lebronjames #edit #nba.mp3"
+dest_files=["res://.godot/imported/[Edit] BO BO BO BOOM #lebron #lebronjames #edit #nba.mp3-a7adc036d88497e60e242e28018c49de.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
